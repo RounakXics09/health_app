@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router';
+import CommonFooter from './apps/pages/CommonFooter'
+import CommonHeader from './apps/pages/CommonHeader'
+import MainPage from './apps/pages/MainPage'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+      return (
+          <BrowserRouter>
+              <CommonHeader />
+              <Routes>
+                  <Route path="/" element={<MainPage />} />
+                  {/* <Route path="/about" element={<About />} />
+                  <Route path="/service" element={<Service />} />
+                  <Route path="/blog" element={<Blog />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/blog/details" element={<BlogDetails />} />
+                  <Route path="/service/details" element={<ServiceDetails />} />
+                  <Route path="*" element={<ErrPage />} /> */}
+              </Routes>
+              <CommonFooter />
+          </BrowserRouter>
+      )
 }
 
 export default App;
