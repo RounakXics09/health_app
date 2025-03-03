@@ -15,7 +15,7 @@ import { Box, Grid2 } from '@mui/material'
 function MainPage() {
   return (
     <Box sx={{width:'100%'}}>
-      <Grid2 container sx={{px:8, py:8}} rowSpacing={4}>
+      <Grid2 container sx={{px:8, py:5}} rowSpacing={4}>
         <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
           <HeroSection />
         </Grid2>

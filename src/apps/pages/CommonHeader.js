@@ -39,10 +39,10 @@ function CommonHeader() {
 
                     <Box className="header-right-section div-center display-sm-none">
                         <div className='signin'>
-                            Sign In
+                            Login
                         </div>
                         <div className='signup div-center'>
-                            Sign Up
+                            Book a Demo
                         </div>
                     </Box>
                 </Toolbar>

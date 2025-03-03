@@ -30,36 +30,36 @@ function CommonFooter() {
           <Grid2 container>
             <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
               <div className='footer-heading'>
-                Plans
+                Product
               </div>
               <div className='footer-inner'>
-                Enterprise
+                Dashboard
               </div>
               <div className='footer-inner'>
-                Featurs
+                Feature
               </div>
               <div className='footer-inner'>
-                Featurs
+                Pricing
               </div>
               <div className='footer-inner'>
-                Featurs
+                Help
               </div>
             </Grid2>
             <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
               <div className='footer-heading'>
-                Support
+                Company
               </div>
               <div className='footer-inner'>
-                Enterprise
+                About us
               </div>
               <div className='footer-inner'>
-                Featurs
+                Careers
               </div>
               <div className='footer-inner'>
-                Featurs
+                Blog
               </div>
               <div className='footer-inner'>
-                Featurs
+                Contact
               </div>
             </Grid2>
             <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
@@ -80,10 +80,10 @@ function CommonFooter() {
       </Grid2>
       <Grid2 container className='end-footer'>
         <Grid2>
-          © 2025 XICS . All rights reserved.
+          © 2025 fitnessclub . All rights reserved.
         </Grid2>
         <Grid2>
-          Terms and conditions | Privacy policy | Payment method
+          Privacy policy    |    Terms of Service    |    Cookies Settings
         </Grid2>
       </Grid2>
     </Box>
