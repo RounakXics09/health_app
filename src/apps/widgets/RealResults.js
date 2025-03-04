@@ -7,7 +7,7 @@ function RealResults() {
     <Box>
       <Grid2 container className='div-center'>
         <Grid2 className='health-text'>Real <span className='health-secondary-text'>Results</span> From Real <span className='health-secondary-text'>Users</span> </Grid2>
-        <Grid2 sx={{ py: 4 }} className='health-description text-center width-50'>Hear from our fitness community about how our platform has helped them transform their health and fitness journey</Grid2>
+        <Grid2 sx={{ py: 4 }} className='health-description text-center width-50 width-100-sm'>Hear from our fitness community about how our platform has helped them transform their health and fitness journey</Grid2>
       </Grid2>
       <Grid2 container columnSpacing={4} rowSpacing={4}>
         <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='real-card-container'>

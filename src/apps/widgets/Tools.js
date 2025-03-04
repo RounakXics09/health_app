@@ -31,8 +31,8 @@ function Tools() {
           </div>
           <Grid2 sx={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'column', position: 'absolute', right: '20px', left: '20px' }} className='tools-bottom'>
             <Grid2 sx={{ px: 2, py: 5 }}>
-              <Grid2 className='real-results-name'>Customizable Workout Plans</Grid2>
-              <Grid2 sx={{py:2}} className='real-results-text'>Tailor your workout routines to fit your unique goals and preferences, with easy-to-edit plans created by top trainers</Grid2>
+              <Grid2 className='real-results-name'>Progress Tracking</Grid2>
+              <Grid2 sx={{py:2}} className='real-results-text'>Monitor your fitness progress with real-time updates on calories burned, steps taken, and muscle mass gained</Grid2>
             </Grid2>
           </Grid2>
         </Grid2>
@@ -43,8 +43,8 @@ function Tools() {
           </div>
           <Grid2 sx={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'column', position: 'absolute', right: '20px', left: '20px' }} className='tools-bottom'>
             <Grid2 sx={{ px: 2, py: 5 }}>
-              <Grid2 className='real-results-name'>Customizable Workout Plans</Grid2>
-              <Grid2 sx={{py:2}} className='real-results-text'>Tailor your workout routines to fit your unique goals and preferences, with easy-to-edit plans created by top trainers</Grid2>
+              <Grid2 className='real-results-name'>Meal Prep Integration</Grid2>
+              <Grid2 sx={{py:2}} className='real-results-text'>Plan and track your meals alongside your workouts for a holistic approach to health.</Grid2>
             </Grid2>
           </Grid2>
         </Grid2>
@@ -54,8 +54,8 @@ function Tools() {
           </div>
           <Grid2 sx={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'column', position: 'absolute', right: '20px', left: '20px' }} className='tools-bottom'>
             <Grid2 sx={{ px: 2, py: 5 }}>
-              <Grid2 className='real-results-name'>Customizable Workout Plans</Grid2>
-              <Grid2 sx={{py:2}} className='real-results-text'>Tailor your workout routines to fit your unique goals and preferences, with easy-to-edit plans created by top trainers</Grid2>
+              <Grid2 className='real-results-name'>Body Analysis Insights</Grid2>
+              <Grid2 sx={{py:2}} className='real-results-text'>Track your weight, BMI, and calories burned to improve your fitness results.</Grid2>
             </Grid2>
           </Grid2>
         </Grid2>
@@ -65,14 +65,16 @@ function Tools() {
           </div>
           <Grid2 sx={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'column', position: 'absolute', right: '20px', left: '20px' }} className='tools-bottom'>
             <Grid2 sx={{ px: 2, py: 5 }}>
-              <Grid2 className='real-results-name'>Customizable Workout Plans</Grid2>
-              <Grid2 sx={{py:2}} className='real-results-text'>Tailor your workout routines to fit your unique goals and preferences, with easy-to-edit plans created by top trainers</Grid2>
+              <Grid2 className='real-results-name'>Smart Workout Scheduler</Grid2>
+              <Grid2 sx={{py:2}} className='real-results-text'>Easily plan and organize your workouts and activities with a clear, daily timeline.</Grid2>
             </Grid2>
           </Grid2>
         </Grid2>
 
       </Grid2>
-      <Grid2></Grid2>
+      <Grid2 className='div-center'>
+        <Grid2 className="filled-button">Explore More</Grid2>
+      </Grid2>
     </Box>
   )
 }

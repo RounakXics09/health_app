@@ -3,8 +3,8 @@ import React from 'react'
 import Fitness from '../assests/Fitness.png'
 function Goals() {
   return (
-    <Box>
-      <Card sx={{boxShadow: '0px 0px 26.1px 0px #0000001A',p:5,borderRadius:'14px'}}>
+    <Box sx={{py:4}}>
+      <Card sx={{ boxShadow: '0px 0px 26.1px 0px #0000001A', p: 5, borderRadius: '14px' }}>
         <Grid2 container columnSpacing={5}>
           <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
             <Grid2 className='health-text'>
@@ -13,7 +13,9 @@ function Goals() {
             <Grid2 sx={{ py: 4 }} className='health-description'>
               Join thousands of fitness enthusiasts on our platform and transform your health. Available on iOS and Android.
             </Grid2>
-            <Grid2 className="filled-button">Start Your Journey</Grid2>
+            <Grid2 sx={{ display: 'flex' }}>
+              <Grid2 className="filled-button">Start Your Journey</Grid2>
+            </Grid2>
           </Grid2>
           <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className='div-center'>
             <Grid2 sx={{ px: 2 }}>
