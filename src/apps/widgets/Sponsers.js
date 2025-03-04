@@ -9,7 +9,7 @@ import SponserLogo6 from '../assests/helpscout.svg'
 
 function Sponsers() {
   return (
-    <Box sx={{py:4}}>
+    <Box sx={{py:4,my:4}} style={{border: '1px solid #CECECE',borderLeft:'none',borderRight:'none'}}>
       <Grid2 container rowSpacing={2}>
         <Grid2 item size={{ xs: 12, sm: 12, md: 2, lg: 2, xl: 2 }}>
           <div className='div-center' style={{padding:'0px 20px'}}>

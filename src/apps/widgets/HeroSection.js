@@ -18,7 +18,7 @@ function HeroSection() {
                     <img src={Hero2} height={'93px'} width={'93px'} />
                 </div>
             </Grid2>
-            <Grid2 className='health-description'>Track your workouts, meals, and progress with our intuitive dashboard. <br />Stay motivated and reach your fitness goals faster</Grid2>
+            <Grid2 sx={{py:3}} className='health-description text-center'>Track your workouts, meals, and progress with our intuitive dashboard. <br />Stay motivated and reach your fitness goals faster</Grid2>
             <Grid2 className='div-center position-relative width-100'>
                 <div style={{ top: '-50px', left: '50px', position: 'absolute' }} >
                     <img src={Hero3} height={'93px'} width={'93px'} />

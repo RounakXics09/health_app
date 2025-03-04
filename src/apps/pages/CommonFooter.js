@@ -20,7 +20,7 @@ function CommonFooter() {
 
   return (
     <Box>
-      <Grid2 container rowSpacing={3} sx={{ margin: '20px', paddingBottom: '20px', borderBottom: '1px solid #1767FE' }}>
+      <Grid2 container rowSpacing={3} sx={{ margin: '20px', paddingBottom: '20px', borderBottom:'1px solid rgba(0, 0, 0, 0.15)' }}>
         <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
           <div style={{ paddingBottom: '15px' }}>
             <img src={Logo} alt="Logo" />
