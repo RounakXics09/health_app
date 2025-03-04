@@ -322,14 +322,21 @@
 
 .real-card-container {
   padding: 20px;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)) border-box;
+}
+
+.real-card-container:hover {
+  padding: 20px;
+  position: relative;
   border-radius: 15px;
-  border-top:1px solid rgba(0, 0, 0, 0.15) !important;
-  border-width: 1px;
-  border-style: solid;
-  border-image:
-    linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.15),
-      rgba(0, 0, 0, 0)) 1 100%;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 35.3px 0px #00000014;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)) border-box;
 }
 
 .real-results-text {
@@ -361,3 +368,95 @@
 }
 
 /* real results end */
+
+.tools-card-container {
+  padding: 20px;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)) border-box;
+}
+
+.tools-card-container:hover {
+  padding: 20px;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 35.3px 0px #00000014;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)) border-box;
+}
+
+.tools-bottom {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 36.6%);
+  height: 280px;
+  bottom: 20px;
+  justify-content: flex-end;
+}
+
+
+/* tools end */
+
+@media screen and (max-width: 786px) {
+  .display-sm-none {
+    display: none;
+  }
+
+  .health-heading-text {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56.22px;
+  }
+  
+  .health-heading-secondary-text {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 46.22px;
+  }
+  
+  .health-text {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 38px;
+  }
+  
+  .health-secondary-text {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 38px;
+  }
+  
+  .health-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21.79px;
+  }
+
+  .smart-choice-links {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17.24px;
+  }
+
+  .filled-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24.59px;
+    min-width: 187px;
+    margin: 10px;
+  }
+  
+  .outlined-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24.59px;
+    min-width: 187px;
+    margin: 10px;
+  }
+
+  .d-flex-col-sm{
+    flex-direction: column;
+  }
+  
+}

@@ -10,8 +10,8 @@ import { Link } from 'react-router';
 
 const pages = [
     { name: 'Home', link: '' },
-    { name: 'About', link: 'about' },
-    { name: 'Service', link: 'service' },
+    { name: 'Features', link: 'features' },
+    { name: 'Pricing', link: 'pricing' },
     { name: 'Blog', link: 'blog' },
     { name: 'Contact', link: '' }
 ];
