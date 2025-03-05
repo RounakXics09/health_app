@@ -6,13 +6,13 @@ function SmartChoice() {
   return (
     <Box sx={{py:5}}>
       <Grid2 container columnSpacing={4} rowSpacing={4}>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} sx={{display:'flex',flexDirection:'column',justifyContent:'center'}}>
+        <Grid2 item size={{ xs: 12, sm: 12, md: 5, lg: 5, xl: 5 }} sx={{display:'flex',flexDirection:'column',justifyContent:'center'}}>
           <Grid2 className='health-text'>The <span className='health-secondary-text'>
             Smarter Choice </span> for Health & Fitness</Grid2>
           <Grid2 sx={{ py: 4 }} className='health-description width-80'>Reach your fitness goals with personalized plans
             and easy tracking, all in one simple platform</Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
+        <Grid2 item size={{ xs: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
           <Grid2 container columnSpacing={3} rowSpacing={3}>
             <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
               <Grid2 className='choice-card-container'>
