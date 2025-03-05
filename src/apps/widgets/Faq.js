@@ -14,85 +14,92 @@ function Faq() {
         </Grid2>
         <Grid2 item size={{ xs: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
           <Grid2 sx={{ py: 2 }}>
-            <Accordion>
+            <Accordion sx={{ background: '#ffffff', boxShadow: 'none', borderBottom: '1px solid #CECECE', borderRadius: '0px' }}>
               <AccordionSummary
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
-                <Typography component="span">How can I track my workouts using this platform?</Typography>
+                <Typography component="span" sx={{ color: '#00000099', fontSize: '20px', fontWeight: '600' }}>How can I track my workouts using this platform?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                Our platform offers a comprehensive workout tracking feature where you can log exercises, track your progress, and view detailed stats about your performance. You can set reminders for workouts and track your daily fitness goals easily.
+                <Typography sx={{ color: '#000000', fontSize: '16px', fontWeight: '400px', opacity: '50%' }}>
+                  Our platform offers a comprehensive workout tracking feature where you can log exercises, track your progress, and view detailed stats about your performance. You can set reminders for workouts and track your daily fitness goals easily.
+                </Typography>
               </AccordionDetails>
             </Accordion>
           </Grid2>
           <Grid2 sx={{ py: 2 }}>
-            <Accordion>
+            <Accordion sx={{ background: '#ffffff', boxShadow: 'none', borderBottom: '1px solid #CECECE', borderRadius: '0px' }}>
               <AccordionSummary
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
-                <Typography component="span">Does the platform integrate with fitness wearables?</Typography>
+                <Typography component="span" sx={{ color: '#00000099', fontSize: '20px', fontWeight: '600' }}>Does the platform integrate with fitness wearables?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
+                <Typography sx={{ color: '#000000', fontSize: '16px', fontWeight: '400px', opacity: '50%' }}>
+                  Our platform offers a comprehensive workout tracking feature where you can log exercises, track your progress, and view detailed stats about your performance. You can set reminders for workouts and track your daily fitness goals easily.
+                </Typography>
               </AccordionDetails>
             </Accordion>
           </Grid2>
           <Grid2 sx={{ py: 2 }}>
-            <Accordion>
+            <Accordion sx={{ background: '#ffffff', boxShadow: 'none', borderBottom: '1px solid #CECECE', borderRadius: '0px' }}>
               <AccordionSummary
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
-                <Typography component="span">Can I customize my workout plan?</Typography>
+                <Typography component="span" sx={{ color: '#00000099', fontSize: '20px', fontWeight: '600' }}>Can I customize my workout plan?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
+                <Typography sx={{ color: '#000000', fontSize: '16px', fontWeight: '400px', opacity: '50%' }}>
+                  Our platform offers a comprehensive workout tracking feature where you can log exercises, track your progress, and view detailed stats about your performance. You can set reminders for workouts and track your daily fitness goals easily.
+                </Typography>
               </AccordionDetails>
             </Accordion>
           </Grid2>
           <Grid2 sx={{ py: 2 }}>
-            <Accordion>
+            <Accordion sx={{ background: '#ffffff', boxShadow: 'none', borderBottom: '1px solid #CECECE', borderRadius: '0px' }}>
               <AccordionSummary
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
-                <Typography component="span">How do I set fitness goals and milestones?</Typography>
+                <Typography component="span" sx={{ color: '#00000099', fontSize: '20px', fontWeight: '600' }}>How do I set fitness goals and milestones?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
+                <Typography sx={{ color: '#000000', fontSize: '16px', fontWeight: '400px', opacity: '50%' }}>
+                  Our platform offers a comprehensive workout tracking feature where you can log exercises, track your progress, and view detailed stats about your performance. You can set reminders for workouts and track your daily fitness goals easily.
+                </Typography>
               </AccordionDetails>
             </Accordion>
           </Grid2>
           <Grid2 sx={{ py: 2 }}>
-            <Accordion>
+            <Accordion sx={{ background: '#ffffff', boxShadow: 'none', borderBottom: '1px solid #CECECE', borderRadius: '0px' }}>
               <AccordionSummary
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
-                <Typography component="span">Is there a mobile app version available?</Typography>
+                <Typography component="span" sx={{ color: '#00000099', fontSize: '20px', fontWeight: '600' }}>Is there a mobile app version available?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
+                <Typography sx={{ color: '#000000', fontSize: '16px', fontWeight: '400px', opacity: '50%' }}>
+                  Our platform offers a comprehensive workout tracking feature where you can log exercises, track your progress, and view detailed stats about your performance. You can set reminders for workouts and track your daily fitness goals easily.
+                </Typography>
               </AccordionDetails>
             </Accordion>
           </Grid2>
           <Grid2 sx={{ py: 2 }}>
-            <Accordion>
+            <Accordion sx={{ background: '#ffffff', boxShadow: 'none', borderBottom: '1px solid #CECECE', borderRadius: '0px' }}>
               <AccordionSummary
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
-                <Typography component="span">Do I need a premium membership to access all features?</Typography>
+                <Typography component="span" sx={{ color: '#00000099', fontSize: '20px', fontWeight: '600' }}>Do I need a premium membership to access all features?</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
+                <Typography sx={{ color: '#000000', fontSize: '16px', fontWeight: '400px', opacity: '50%' }}>
+                  Our platform offers a comprehensive workout tracking feature where you can log exercises, track your progress, and view detailed stats about your performance. You can set reminders for workouts and track your daily fitness goals easily.
+                </Typography>
               </AccordionDetails>
             </Accordion>
           </Grid2>
