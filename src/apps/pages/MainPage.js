@@ -11,13 +11,17 @@ import Plan from '../widgets/Plan'
 import Faq from '../widgets/Faq'
 import Goals from '../widgets/Goals'
 import { Box, Grid2 } from '@mui/material'
+import NewHeroSection from '../widgets/NewHeroSection'
 
 function MainPage() {
   return (
     <Box sx={{ width: '100%' }}>
-      <Grid2 container sx={{ px: { xs: 2, sm: 2, md: 4, lg: 8, xl: 8 }, py: 5 }} rowSpacing={4}>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
+      <Grid2 container sx={{ px: { xs: 2, sm: 2, md: 4, lg: 8, xl: 8 }, py: 8 }} rowSpacing={4}>
+        {/* <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
           <HeroSection />
+        </Grid2> */}
+        <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
+          <NewHeroSection />
         </Grid2>
         <Grid2 item size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
           <PhotoSection />
