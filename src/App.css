@@ -353,7 +353,7 @@
   line-height: 31px;
   letter-spacing: 0%;
   color: #6F7684;
-  width: 80%;
+  /* width: 80%; */
 }
 
 .new-hero-desc-name {
@@ -786,7 +786,7 @@
   }
 
   .display-sm-none {
-    display: none;
+    display: none !important;
   }
 
   .health-heading-text {
@@ -900,6 +900,10 @@
     line-height: 24.59px;
     min-width: 187px;
     margin: 10px;
+  }
+
+  .outlined-button-linear {
+    margin: 0px 10px;
   }
 
   .d-flex-col-sm {

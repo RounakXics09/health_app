@@ -5,7 +5,7 @@ function Goals() {
   return (
     <Box sx={{py:4}}>
       <Card sx={{ boxShadow: '0px 0px 26.1px 0px #0000001A', p: 5, borderRadius: '14px' }}>
-        <Grid2 container columnSpacing={5}>
+        <Grid2 container columnSpacing={5} rowSpacing={4}>
           <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
             <Grid2 className='health-text'>
               Achieve Your <span className='health-secondary-text'>Fitness Goals</span> with Ease
