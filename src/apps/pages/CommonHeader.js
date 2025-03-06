@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Logo from '../assests/logo.svg';
 import { Link } from 'react-router';
-
+import { motion } from 'framer-motion';
 
 const pages = [
     { name: 'Home', link: '' },
@@ -23,27 +23,54 @@ function CommonHeader() {
         <AppBar position="static" className='header'>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <img src={Logo} alt="Logo" />
+                    <div className="flex items-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="flex items-center"
+                        >
+                            <img src={Logo} alt="Logo" />
+                        </motion.div>
+                    </div>
 
-                    <Box className="div-center header-menu-section display-sm-none" sx={{ flexGrow: 1}}>
+
+                    <Box className="div-center header-menu-section display-sm-none" sx={{ flexGrow: 1 }}>
                         {pages.map((e, i) => (
-                            <Button
+                            <motion.div
                                 key={i}
-                                className='menu-buttons'
-                                sx={{ my: 2 }}
+                                initial={{ opacity: 0, y: -10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3, delay: 0.1 * i }}
                             >
-                                <Link to={'/' + e.link} style={{ textDecoration: 'none', color: '#1C163C' }}>{e.name}</Link>
-                            </Button>
+                                <Button
+                                    key={i}
+                                    className='menu-buttons'
+                                    sx={{ my: 2 }}
+                                >
+                                    <Link to={'/' + e.link} style={{ textDecoration: 'none', color: '#1C163C' }}>{e.name}</Link>
+                                </Button>
+                            </motion.div>
                         ))}
                     </Box>
 
                     <Box className="header-right-section div-center display-sm-none">
-                        <div className='signin'>
+                        <motion.div
+                            initial={{ opacity: 0, x: 10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            className='signin'
+                        >
                             Login
-                        </div>
-                        <div className='signup div-center'>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5, delay: 0.7 }}
+                            className='signup div-center'
+                        >
                             Book a Demo
-                        </div>
+                        </motion.div>
                     </Box>
                 </Toolbar>
             </Container>
