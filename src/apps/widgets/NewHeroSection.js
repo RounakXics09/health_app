@@ -56,14 +56,15 @@ function NewHeroSection() {
                                 //     duration: 1,
                                 //     repeat: Infinity,
                                 //     ease: "easeInOut",
-                                // }}
+                                // }}  
+                                // simple animation
                                 animate={{
-                                    color: ["#008A47", "#24CC63", "##58DE8B", "#008A47"], // Red → Green → Blue → Red
-                                    opacity: [1, 0.5, 1], // Fades in and out
+                                    color: ["#008A47", "#24CC63", "#24CC63", "#008A47"],
+                                    opacity: [1, 0.5, 1],
                                 }}
                                 transition={{
-                                    duration: 1, // Total animation time
-                                    repeat: Infinity, // Loops forever
+                                    duration: 3,
+                                    repeat: Infinity,
                                     ease: "easeInOut",
                                 }}
                             > Diet Coach </motion.span>
