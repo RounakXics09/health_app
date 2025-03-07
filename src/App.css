@@ -156,6 +156,7 @@
   letter-spacing: 0%;
   text-align: center;
   padding-inline: 20px;
+  cursor: pointer;
 }
 
 .signup {
@@ -170,6 +171,7 @@
   line-height: 21.79px;
   letter-spacing: 0%;
   text-align: center;
+  cursor: pointer;
 }
 
 

@@ -1,26 +1,13 @@
 import './App.css';
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router';
-import CommonFooter from './apps/pages/CommonFooter'
-import CommonHeader from './apps/pages/CommonHeader'
-import MainPage from './apps/pages/MainPage'
-import Blog from './apps/pages/Blog';
+import { BrowserRouter } from 'react-router';
+import RoutingPage from './apps/pages/RoutingPage';
+
 function App() {
 
     return (
         <BrowserRouter>
-            <CommonHeader />
-            <Routes>
-                <Route path="/" element={<MainPage />} />
-                <Route path="/blog" element={<Blog />} />
-                {/* <Route path="/about" element={<About />} />
-                  <Route path="/service" element={<Service />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="/blog/details" element={<BlogDetails />} />
-                  <Route path="/service/details" element={<ServiceDetails />} />
-                  <Route path="*" element={<ErrPage />} /> */}
-            </Routes>
-            <CommonFooter />
+            <RoutingPage />
         </BrowserRouter>
     )
 }
