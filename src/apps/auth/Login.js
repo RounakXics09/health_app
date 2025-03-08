@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, Grid2, TextField, Typography } from '@mui/material'
+import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, FormLabel, Grid2, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { Link } from 'react-router';
 
@@ -14,17 +14,18 @@ function Login() {
   };
 
   return (
-    <Box sx={{ height: '100vh', px: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <Box sx={{ height: '100vh', px: { sm: 2, md: 6, lg: 8, xl: 8 }, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
       <Grid2>
-        <Card sx={{ p: 3, boxShadow: 3, borderRadius: 3 }}>
+        <Card className='login-card' sx={{ p: { sm: 2, md: 3, lg: 3, xl: 3 } }}>
           <CardContent>
-            <Typography variant="h5" component="h1" align="center" gutterBottom>
+            <Grid2 className='login-header' align="center" gutterBottom>
               Welcome Back to Fitness Club
-            </Typography>
-            <Typography variant="h5" component="h1" align="center" gutterBottom>
+            </Grid2>
+            <Grid2 className='login-header-desc' align="center" gutterBottom>
               Enter your username and password to continue.
-            </Typography>
+            </Grid2>
             <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
+              <FormLabel className='form-label'>Email*</FormLabel>
               <TextField
                 fullWidth
                 label="Email"
@@ -36,6 +37,7 @@ function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
+              <FormLabel className='form-label'>Password*</FormLabel>
               <TextField
                 fullWidth
                 label="Password"
@@ -55,15 +57,16 @@ function Login() {
                       <Checkbox
                         checked={rememberMe}
                         onChange={(e) => setRememberMe(e.target.checked)}
-                        color="primary"
+                        className='login-inner-text'
                       />
                     }
+                    className='login-inner-text'
                     label="Remember me"
                   />
                 </Grid2>
                 <Grid2 >
-                  <Link href="#" variant="body2">
-                    Forgot password?
+                  <Link href="#" className='login-links'>
+                    Forgot Password
                   </Link>
                 </Grid2>
               </Grid2>
@@ -72,19 +75,26 @@ function Login() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 2, bgcolor: "primary.main", ":hover": { bgcolor: "primary.dark" } }}
+                className='login-button'
+                sx={{ mt: 3, mb: 4 }}
               >
                 Login
               </Button>
             </Box>
-            <Typography variant="body2" align="center" sx={{ mt: 2 }}>
+            <Typography className='login-inner-text' sx={{ mt: { sm: 1, md: 2, lg: 2 } }}>
               Don't have an account?{" "}
-              <a href="#" style={{ color: "#1976d2", textDecoration: "none" }}>
+              <Link href="#" className='login-links'>
                 Sign up
-              </a>
+              </Link>
             </Typography>
           </CardContent>
         </Card>
+      </Grid2>
+      <Grid2 className='login-bottom-text' sx={{ pt: { sm: 1, md: 3, lg: 3 }, pb: 1 }}>
+        Privacy Policy   |    Terms of Service
+      </Grid2>
+      <Grid2 className='login-bottom-text'>
+        © 2025 fintnessclub. All rights reserved.
       </Grid2>
     </Box>
   )
