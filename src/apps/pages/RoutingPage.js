@@ -32,7 +32,7 @@ function RoutingPage() {
                 <Route path="/auth" element={<AuthMain />}>
                     <Route path="login" element={<Login />} />
                     <Route path="register" element={<Register />} />
-                    <Route path="forgot-password" element={<ForgotPassword />} />
+                    <Route path="forgotPassword" element={<ForgotPassword />} />
                     <Route path="ResetPassword" element={<ResetPassword />} />
                 </Route>
 

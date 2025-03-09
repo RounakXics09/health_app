@@ -1,17 +1,26 @@
 import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, FormLabel, Grid2, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Logging in with:", { email, password });
   };
+
+  const handleClick = (e) => {
+    navigate("/auth/register");
+  }
+
+  const handleForgotClick = (e) => {
+    navigate("/auth/forgotPassword");
+  }
 
   return (
     <Box sx={{ height: '100vh', px: { sm: 2, md: 6, lg: 8, xl: 8 }, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
@@ -65,9 +74,9 @@ function Login() {
                   />
                 </Grid2>
                 <Grid2 >
-                  <Link href="#" className='login-links'>
+                  <Grid2 onClick={() => { handleForgotClick() }} className='login-links'>
                     Forgot Password
-                  </Link>
+                  </Grid2>
                 </Grid2>
               </Grid2>
 
@@ -78,15 +87,15 @@ function Login() {
                 className='login-button'
                 sx={{ mt: 3, mb: 4 }}
               >
-                Login
+                Log in
               </Button>
             </Box>
-            <Typography className='login-inner-text' sx={{ mt: { sm: 1, md: 2, lg: 2 } }}>
+            <Grid2 className='login-inner-text' sx={{ mt: { sm: 1, md: 2, lg: 2 } }}>
               Don't have an account?{" "}
-              <Link href="#" className='login-links'>
+              <span onClick={() => { handleClick('login') }} className='login-links'>
                 Sign up
-              </Link>
-            </Typography>
+              </span>
+            </Grid2>
           </CardContent>
         </Card>
       </Grid2>

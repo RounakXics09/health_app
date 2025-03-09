@@ -228,6 +228,13 @@
   color: #000000;
   cursor: pointer;
   text-decoration: none;
+  padding-left: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .form-label {
