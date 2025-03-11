@@ -8,6 +8,9 @@ import Features from '../pages/Features'
 import Contact from '../pages/Contact'
 import Blog from '../pages/Blog';
 import AuthMain from '../pages/AuthMain';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsOfService from '../pages/TermsOfService';
+import AboutUs from '../pages/AboutUs';
 import Login from '../auth/Login';
 import Register from '../auth/Register';
 import ForgotPassword from '../auth/ForgotPassword';
@@ -41,6 +44,9 @@ function RoutingPage() {
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+                <Route path="/termsService" element={<TermsOfService />} />
                 <Route path="*" element={<MainPage />} />
             </Routes>
             {

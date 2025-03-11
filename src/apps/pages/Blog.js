@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogCards from '../components/BlogCards'
 import { Box, Grid2 } from '@mui/material';
+import Goals from '../widgets/Goals'
 
 
 const Blog_array = [
@@ -27,6 +28,30 @@ const Blog_array = [
         heading: 'The Ultimate Morning Workout Routine',
         description: 'Kickstart your day with this energizing 20-minute workout that boosts metabolism and improves focus.',
         gym_points: ['LiftingWeights', 'StrebgthTraining', 'Gym Motivation']
+    },
+    {
+        id: 4,
+        date: 'March 10, 2025',
+        time: '8:00 AM',
+        heading: 'The Ultimate Morning Workout Routine',
+        description: 'Kickstart your day with this energizing 20-minute workout that boosts metabolism and improves focus.',
+        gym_points: ['LiftingWeights', 'StrebgthTraining', 'Gym Motivation']
+    },
+    {
+        id: 5,
+        date: 'March 10, 2025',
+        time: '8:00 AM',
+        heading: 'The Ultimate Morning Workout Routine',
+        description: 'Kickstart your day with this energizing 20-minute workout that boosts metabolism and improves focus.',
+        gym_points: ['LiftingWeights', 'StrebgthTraining', 'Gym Motivation']
+    },
+    {
+        id: 6,
+        date: 'March 10, 2025',
+        time: '8:00 AM',
+        heading: 'The Ultimate Morning Workout Routine',
+        description: 'Kickstart your day with this energizing 20-minute workout that boosts metabolism and improves focus.',
+        gym_points: ['LiftingWeights', 'StrebgthTraining', 'Gym Motivation']
     }
 ]
 
@@ -44,6 +69,7 @@ function Blog() {
                     })
                 }
             </Grid2>
+            <Goals />
         </Box>
     )
 }
