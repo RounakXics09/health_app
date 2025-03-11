@@ -45,8 +45,8 @@ function RoutingPage() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<AboutUs />} />
-                <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
-                <Route path="/termsService" element={<TermsOfService />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-service" element={<TermsOfService />} />
                 <Route path="*" element={<MainPage />} />
             </Routes>
             {

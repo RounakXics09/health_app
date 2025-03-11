@@ -13,7 +13,7 @@ const pages = [
     { name: 'Features', link: 'features' },
     { name: 'Pricing', link: 'pricing' },
     { name: 'Blog', link: 'blog' },
-    { name: 'Contact', link: '' }
+    { name: 'Contact', link: 'contact' }
 ];
 
 function CommonHeader() {
