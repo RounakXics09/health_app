@@ -57,7 +57,8 @@ const Blog_array = [
 
 function Blog() {
     return (
-        <Box sx={{px:5,py:5}}>
+        <Box sx={{ px: 5, py: 2 }}>
+            <Grid2 className='blog-heading' sx={{py:5}}>All blog posts</Grid2>
             <Grid2 container columnSpacing={6} rowSpacing={6}>
                 {
                     Blog_array.map((e, i) => {
