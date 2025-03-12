@@ -31,7 +31,11 @@ function Contact() {
           <img src={ContactImage} />
         </Grid2>
         <Grid2 item size={{ xs: 12, md: 6, lg: 6, xl: 6 }}>
-
+          <Grid2>
+          <Grid2></Grid2>
+          <Grid2></Grid2>
+          <Grid2></Grid2>
+          </Grid2>
         </Grid2>
       </Grid2>
     </Grid2>
