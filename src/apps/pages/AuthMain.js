@@ -32,9 +32,11 @@ function AuthMain() {
             <Grid2 container sx={{ position: 'relative' }}>
                 <Grid2 size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} sx={{ background: '#F3F5F7' }} className="div-center display-sm-none">
                     {
-                        authCheck() === 'login' ?
-                        <img src={LoginSvg} style={{ zIndex: 4 }} /> :
-                        <img src={RegisterSvg} style={{ zIndex: 4 }} />
+                        authCheck() === 'register' ?
+                            <img src={RegisterSvg} style={{ zIndex: 4 }} /> :
+                            authCheck() === 'success' ?
+                                <img src={LoginSvg} style={{ zIndex: 4 }} /> :
+                                <img src={LoginSvg} style={{ zIndex: 4 }} />
                     }
                     <Grid2 sx={{ position: 'absolute', left: '30px', top: '40px' }}>
                         <img src={Logo} style={{ zIndex: 2 }} />
@@ -48,10 +50,10 @@ function AuthMain() {
                 </Grid2>
                 <Grid2 size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} sx={{ background: '#FFFFFF' }}>
                     {
-                        authCheck() === 'login' ? 
-                        <Login /> :
-                        authCheck() === 'register' ? 
-                        <Register /> : <ForgotPassword />
+                        authCheck() === 'login' ?
+                            <Login /> :
+                            authCheck() === 'register' ?
+                                <Register /> : <ForgotPassword />
                     }
                 </Grid2>
             </Grid2>

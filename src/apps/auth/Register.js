@@ -23,10 +23,10 @@ function Register() {
       <Grid2>
         <Card className='login-card' sx={{ p: { sm: 2, md: 3, lg: 3, xl: 3 },height:'80vh' }}>
           <CardContent sx={{overflowY:'auto',height:'75vh',p: { sm: 2, md: 3, lg: 3, xl: 3 }}}>
-            <Grid2 className='login-header' align="center" gutterBottom>
+            <Grid2 className='login-header' align="center" >
               Welcome Back to Fitness Club
             </Grid2>
-            <Grid2 className='login-header-desc' align="center" gutterBottom>
+            <Grid2 className='login-header-desc' align="center" >
               Enter your username and password to continue.
             </Grid2>
             <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>

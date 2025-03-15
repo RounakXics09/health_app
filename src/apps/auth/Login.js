@@ -22,22 +22,25 @@ function Login() {
     navigate("/auth/forgotPassword");
   }
 
+  const handleBottomClick = (e) => {
+    navigate(`/${e}`);
+  }
+
   return (
     <Box sx={{ height: '100vh', px: { sm: 2, md: 6, lg: 8, xl: 8 }, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
       <Grid2>
         <Card className='login-card' sx={{ p: { sm: 2, md: 3, lg: 3, xl: 3 } }}>
           <CardContent>
-            <Grid2 className='login-header' align="center" gutterBottom>
+            <Grid2 className='login-header' align="center" >
               Welcome Back to Fitness Club
             </Grid2>
-            <Grid2 className='login-header-desc' align="center" gutterBottom>
+            <Grid2 className='login-header-desc' align="center" >
               Enter your username and password to continue.
             </Grid2>
             <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
               <FormLabel className='form-label'>Email*</FormLabel>
               <TextField
                 fullWidth
-                label="Email"
                 type="email"
                 size='small'
                 margin="normal"
@@ -49,7 +52,6 @@ function Login() {
               <FormLabel className='form-label'>Password*</FormLabel>
               <TextField
                 fullWidth
-                label="Password"
                 type="password"
                 size='small'
                 margin="normal"
@@ -100,7 +102,9 @@ function Login() {
         </Card>
       </Grid2>
       <Grid2 className='login-bottom-text' sx={{ pt: { sm: 1, md: 3, lg: 3 }, pb: 1 }}>
-        Privacy Policy   |    Terms of Service
+        <span style={{cursor:'pointer'}} onClick={()=>{handleBottomClick('privacy-policy')}}>Privacy Policy</span>
+        |
+        <span style={{cursor:'pointer'}} onClick={()=>{handleBottomClick('terms-service')}}>Terms of Service</span>
       </Grid2>
       <Grid2 className='login-bottom-text'>
         © 2025 fintnessclub. All rights reserved.

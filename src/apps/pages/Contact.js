@@ -14,16 +14,16 @@ function Contact() {
   return (
     <Box className='contact-container'>
       <Grid2 className='contact-container-inner'>
-        <Grid2 sx={{position:'absolute',left:'50px',bottom:'0px'}}>
+        <Grid2 sx={{ position: 'absolute', left: '50px', bottom: '0px' }}>
           <img src={Contact1} width={'100px'} height={'100px'} />
         </Grid2>
-        <Grid2 sx={{position:'absolute',top:'-10px',left:'20%',zIndex:-1}}>
+        <Grid2 sx={{ position: 'absolute', top: '-10px', left: '20%', zIndex: -1 }}>
           <img src={Contact2} width={'83px'} height={'83px'} />
         </Grid2>
-        <Grid2 sx={{position:'absolute',bottom:'-10px',right:'18%',zIndex:-1}}>
+        <Grid2 sx={{ position: 'absolute', bottom: '-10px', right: '18%', zIndex: -1 }}>
           <img src={RunIcon} width={'83px'} height={'83px'} />
         </Grid2>
-        <Grid2 sx={{position:'absolute',right:'50px',top:'10px'}}>
+        <Grid2 sx={{ position: 'absolute', right: '50px', top: '10px' }}>
           <img src={Contact3} width={'92px'} height={'92px'} />
         </Grid2>
         <Grid2 className='contact-heading'>Contact Us</Grid2>
@@ -54,15 +54,27 @@ function Contact() {
         </Grid2>
       </Grid2>
 
-      <Grid2 container sx={{ px: 4, py: 5 }}>
+      <Grid2 container sx={{ px: 4, py: 5 }} columnSpacing={5} rowSpacing={5}>
         <Grid2 size={{ xs: 12, md: 6, lg: 6, xl: 6 }}>
-          <img src={ContactImage} />
+          <img src={ContactImage} width={'100%'} height={'100%'} />
         </Grid2>
         <Grid2 size={{ xs: 12, md: 6, lg: 6, xl: 6 }}>
-          <Grid2>
-            <Grid2></Grid2>
-            <Grid2></Grid2>
-            <Grid2></Grid2>
+          <Grid2 className='messsage-form-card'>
+            <Grid2 className='messsage-form-card-head'>Send Us a Message</Grid2>
+            <Grid2 className='messsage-form-card-desc'>Fill out the form below, and our nutrition experts will get back to you soon!</Grid2>
+            <Grid2 sx={{ display: 'flex', flexDirection: 'column', pt: 2 }}>
+              <label>Full Name <span>*</span></label>
+              <input type='text' placeholder='ex.jhondoe@mail.com' />
+            </Grid2>
+            <Grid2 sx={{ display: 'flex', flexDirection: 'column', pt: 2 }}>
+              <label>Email <span>*</span></label>
+              <input type='text' placeholder='ex.jhondoe@mail.com' />
+            </Grid2>
+            <Grid2 sx={{ display: 'flex', flexDirection: 'column', pt: 2 }}>
+              <label>Message</label>
+              <textarea rows={8} type='text' placeholder='ex.jhondoe@mail.com' />
+            </Grid2>
+            <Grid2 sx={{ my: 4 }} className="message-submit-button">Submit</Grid2>
           </Grid2>
         </Grid2>
       </Grid2>

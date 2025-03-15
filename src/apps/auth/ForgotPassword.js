@@ -1,6 +1,7 @@
 import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, FormLabel, Grid2, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router';
+import SuccessIcon from '../assests/SuccessIcon.svg'
 
 
 function ForgotPassword() {
@@ -30,17 +31,16 @@ function ForgotPassword() {
           page === "forgot_password" ?
             <Card className='login-card' sx={{ p: { sm: 2, md: 3, lg: 3, xl: 3 } }}>
               <CardContent>
-                <Grid2 className='login-header' align="center" gutterBottom>
+                <Grid2 className='login-header' align="center" >
                   Request New Password
                 </Grid2>
-                <Grid2 className='login-header-desc' align="center" gutterBottom>
+                <Grid2 className='login-header-desc' align="center" >
                   To reset your password. please etner the email address of your fitness club account
                 </Grid2>
                 <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
                   <FormLabel className='form-label'>Email*</FormLabel>
                   <TextField
                     fullWidth
-                    label="Email"
                     type="email"
                     size='small'
                     margin="normal"
@@ -71,17 +71,16 @@ function ForgotPassword() {
             </Card> : page === "new_password" ?
               <Card className='login-card' sx={{ p: { sm: 2, md: 3, lg: 3, xl: 3 } }}>
                 <CardContent>
-                  <Grid2 className='login-header' align="center" gutterBottom>
+                  <Grid2 className='login-header' align="center" >
                     Create New Password
                   </Grid2>
-                  <Grid2 className='login-header-desc' align="center" gutterBottom>
+                  <Grid2 className='login-header-desc' align="center" >
                     Send your email account to reset password and make new password
                   </Grid2>
                   <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
                     <FormLabel className='form-label'>New Password*</FormLabel>
                     <TextField
                       fullWidth
-                      label="New Password"
                       type="password"
                       size='small'
                       margin="normal"
@@ -93,7 +92,6 @@ function ForgotPassword() {
                     <FormLabel className='form-label'>Confirm Password*</FormLabel>
                     <TextField
                       fullWidth
-                      label="Confirm Password"
                       type="password"
                       size='small'
                       margin="normal"
@@ -124,10 +122,14 @@ function ForgotPassword() {
               </Card> :
               <Card className='login-card' sx={{ p: { sm: 2, md: 3, lg: 3, xl: 3 } }}>
                 <CardContent>
-                  <Grid2 className='login-header' align="center" gutterBottom>
+
+                  <Grid2 className='div-center' sx={{py:4, px:5}}>
+                    <img src={SuccessIcon} width={'100%'} height={'100%'} />
+                  </Grid2>
+                  <Grid2 className='login-header' align="center" >
                     Password Successfully Reset
                   </Grid2>
-                  <Grid2 className='login-header-desc' align="center" gutterBottom>
+                  <Grid2 className='login-header-desc' align="center" >
                     Your password has been reset
                   </Grid2>
                   <Button
@@ -136,7 +138,7 @@ function ForgotPassword() {
                     variant="contained"
                     onClick={() => { handleSubmit() }}
                     className='login-button'
-                    sx={{ mt: 3, mb: 4 }}
+                    sx={{ mt: 2, mb: 4 }}
                   >
                     Login Now
                   </Button>
