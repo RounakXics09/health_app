@@ -40,7 +40,7 @@ function NewHeroSection() {
             overflow: 'hidden'
         }}>
             <Grid2 container >
-                <Grid2 item size={{ xs: 12, sm: 12, md: 8, lg: 8, xl: 8 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 8, lg: 8, xl: 8 }}>
                     <motion.div initial='hidden' animate='visible' variants={slideInLeft} className='top-ai-text'>
                         <div className='green-circle'></div>
                         AI-Powered Nutrition
@@ -98,7 +98,7 @@ function NewHeroSection() {
                         </Grid2>
                     </Grid2>
                     <Grid2 container sx={{ py: 3, width: { xs: '100%', sm: '100%', md: '80%', lg: '80%', xl: '80%' }, zIndex: '4' }} rowSpacing={2} columnSpacing={2}>
-                        <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                        <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                             <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='hero-inner-card green-hero-card'>
                                 <Grid2 className='hero-inner-icon'>
                                     <img src={HCard1} />
@@ -110,7 +110,7 @@ function NewHeroSection() {
                                 <Grid2 className='hero-inner-desc'>Tailored to your goals and preferences</Grid2>
                             </motion.div>
                         </Grid2>
-                        <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                        <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                             <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='hero-inner-card blue-hero-card'>
                                 <Grid2 className='hero-inner-icon'>
                                     <img src={HCard2} />
@@ -122,7 +122,7 @@ function NewHeroSection() {
                                 <Grid2 className='hero-inner-desc'>Chat with your coach anytime, anywhere</Grid2>
                             </motion.div>
                         </Grid2>
-                        <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                        <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                             <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='hero-inner-card purple-hero-card'>
                                 <Grid2 className='hero-inner-icon'>
                                     <img src={HCard3} />
@@ -134,7 +134,7 @@ function NewHeroSection() {
                                 <Grid2 className='hero-inner-desc'>Tailored to your goals and preferences</Grid2>
                             </motion.div>
                         </Grid2>
-                        <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                        <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                             <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='hero-inner-card orange-hero-card'>
                                 <Grid2 className='hero-inner-icon'>
                                     <img src={HCard4} />
@@ -148,14 +148,14 @@ function NewHeroSection() {
                         </Grid2>
                     </Grid2>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
                     <Grid2 sx={{ overflow: 'hidden' }}>
                         <motion.img initial='hidden' animate='visible' variants={slideInRight} src={NewHero} style={{ width: '100%', height: '100%' }} />
                     </Grid2>
                 </Grid2>
             </Grid2>
             <Grid2 container sx={{ width: '100%', py: 4, zIndex: '5' }} columnSpacing={4} rowSpacing={2}>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                     <Grid2 className='bottom-hero-card'>
                         <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='bottom-hero-card-text'>5,000+</motion.div>
                         <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='bottom-hero-card-desc'>Active Users</motion.div>
@@ -164,7 +164,7 @@ function NewHeroSection() {
                         </Grid2>
                     </Grid2>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                     <Grid2 className='bottom-hero-card'>
                         <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='bottom-hero-card-text'>92%</motion.div>
                         <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='bottom-hero-card-desc'>Success Rate</motion.div>
@@ -173,7 +173,7 @@ function NewHeroSection() {
                         </Grid2>
                     </Grid2>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                     <Grid2 className='bottom-hero-card'>
                         <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='bottom-hero-card-text'>15Kg</motion.div>
                         <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='bottom-hero-card-desc'>Avg. Weight Loss</motion.div>
@@ -182,7 +182,7 @@ function NewHeroSection() {
                         </Grid2>
                     </Grid2>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                     <Grid2 className='bottom-hero-card'>
                         <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='bottom-hero-card-text'>24/7</motion.div>
                         <motion.div initial='hidden' animate='visible' variants={fadeIn} whileHover={{ y: -10, transition: { duration: 0.2 } }} className='bottom-hero-card-desc'>Support</motion.div>

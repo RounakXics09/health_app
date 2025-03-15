@@ -4,14 +4,21 @@ import BlogImage from '../assests/BlogImage.svg'
 import CalendarIcon from '../assests/CalendarIcon.png'
 import ClockIcon from '../assests/ClockIcon.png'
 import arrowUpRight from '../assests/arrowUpRight.png'
+import { useNavigate } from 'react-router'
 function BlogCards(props) {
+    const navigate = useNavigate();
 
     useEffect(() => {
         console.log("props", props)
     }, [])
 
+    const handleClick = (e) => {
+        console.log(e)
+        navigate("/blog/details");
+    }
+
     return (
-        <Box className='blog-card'>
+        <Box className='blog-card' onClick={(e) => { handleClick(e) }}>
             <Grid2>
                 <Grid2 sx={{ overflow: 'hidden' }}>
                     <img src={BlogImage} width={'100%'} height={'100%'} />

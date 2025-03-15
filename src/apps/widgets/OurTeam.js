@@ -14,7 +14,7 @@ function OurTeam() {
             <Grid2 className='our-team-heading'>Our <span>Team</span></Grid2>
             <Grid2 className='our-team-description'>We’re a group of food lovers, tech geeks, and health enthusiasts who believe that eating right should be easy.</Grid2>
             <Grid2 container sx={{ py: 5 }} columnSpacing={8} rowSpacing={5}>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                     <Grid2 className='div-center d-flex-col team-card-container'>
                         <Grid2>
                             <img src={Team1} width={'80px'} height={'80px'} />
@@ -32,7 +32,7 @@ function OurTeam() {
                         </Grid2>
                     </Grid2>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                     <Grid2 className='div-center d-flex-col team-card-container'>
                         <Grid2>
                             <img src={Team2} width={'80px'} height={'80px'} />
@@ -50,7 +50,7 @@ function OurTeam() {
                         </Grid2>
                     </Grid2>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                     <Grid2 className='div-center d-flex-col team-card-container'>
                         <Grid2>
                             <img src={Team3} width={'80px'} height={'80px'} />
@@ -68,7 +68,7 @@ function OurTeam() {
                         </Grid2>
                     </Grid2>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }}>
                     <Grid2 className='div-center d-flex-col team-card-container'>
                         <Grid2>
                             <img src={Team4} width={'80px'} height={'80px'} />

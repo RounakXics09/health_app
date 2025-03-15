@@ -13,7 +13,7 @@ function Plan() {
         <Grid2 className="outlined-button" sx={{px:5}}>Annual</Grid2>
       </Grid2>
       <Grid2 container columnSpacing={2} rowSpacing={2}>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='plans-card-container'>
+        <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='plans-card-container'>
           <Grid2 sx={{p:3}}>
             <Grid2 className='plan-text'>Basic</Grid2>
             <Grid2 className='plan-price'>$29<span>/month</span></Grid2>
@@ -28,7 +28,7 @@ function Plan() {
             </Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='plans-card-container'>
+        <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='plans-card-container'>
         <Grid2 sx={{p:3}}>
             <Grid2 className='plan-text'>Pro</Grid2>
             <Grid2 className='plan-price'>$59<span>/month</span></Grid2>
@@ -43,7 +43,7 @@ function Plan() {
             </Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='plans-card-container'>
+        <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='plans-card-container'>
         <Grid2 sx={{p:3}}>
             <Grid2 className='plan-text'>Enterprise</Grid2>
             <Grid2 className='plan-price'>$99<span>/month</span></Grid2>

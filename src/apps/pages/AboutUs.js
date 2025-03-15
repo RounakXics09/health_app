@@ -23,10 +23,10 @@ function AboutUs() {
           <img src={AboutBackground} width={'100%'} />
         </Grid2>
       </Grid2>
-      <Grid2 sx={{ py: 8 }}>
+      <Grid2 sx={{ py: 8, px: 8 }}>
         <AboutPlanner />
       </Grid2>
-      <Grid2>
+      <Grid2 sx={{ px: 8 }}>
         <OurTeam />
       </Grid2>
       <Grid2 sx={{ px: 4, py: 5 }}>

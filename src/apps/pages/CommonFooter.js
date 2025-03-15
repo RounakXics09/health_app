@@ -21,14 +21,14 @@ function CommonFooter() {
   return (
     <Box>
       <Grid2 container rowSpacing={3} sx={{ margin: '20px', paddingBottom: '20px', borderBottom:'1px solid rgba(0, 0, 0, 0.15)' }}>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
           <div style={{ paddingBottom: '15px' }}>
             <img src={Logo} alt="Logo" />
           </div>
         </Grid2>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
           <Grid2 container>
-            <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
+            <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
               <div className='footer-heading'>
                 Product
               </div>
@@ -45,7 +45,7 @@ function CommonFooter() {
                 Help
               </div>
             </Grid2>
-            <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
+            <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
               <div className='footer-heading'>
                 Company
               </div>
@@ -62,7 +62,7 @@ function CommonFooter() {
                 Contact
               </div>
             </Grid2>
-            <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
+            <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }}>
               <Box className="footer-menu-section" sx={{ flexGrow: 1 }}>
                 {pages.map((page, i) => (
                   <div

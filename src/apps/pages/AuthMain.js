@@ -30,7 +30,7 @@ function AuthMain() {
     return (
         <Box sx={{ height: '100vh' }}>
             <Grid2 container sx={{ position: 'relative' }}>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} sx={{ background: '#F3F5F7' }} className="div-center display-sm-none">
+                <Grid2 size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} sx={{ background: '#F3F5F7' }} className="div-center display-sm-none">
                     {
                         authCheck() === 'login' ?
                         <img src={LoginSvg} style={{ zIndex: 4 }} /> :
@@ -46,7 +46,7 @@ function AuthMain() {
                         <img src={BottomFruit} />
                     </Grid2>
                 </Grid2>
-                <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} sx={{ background: '#FFFFFF' }}>
+                <Grid2 size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} sx={{ background: '#FFFFFF' }}>
                     {
                         authCheck() === 'login' ? 
                         <Login /> :

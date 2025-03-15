@@ -31,21 +31,21 @@ function Contact() {
       </Grid2>
 
       <Grid2 container sx={{ px: 15, py: 5 }} columnSpacing={5} rowSpacing={4}>
-        <Grid2 item size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
+        <Grid2 size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
           <Grid2 className='contact-cards'>
             <Grid2><img src={Phone} width={'46px'} height={'46px'} /></Grid2>
             <Grid2>Phone:</Grid2>
             <Grid2>+1 234 567 8901</Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
+        <Grid2 size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
           <Grid2 className='contact-cards'>
             <Grid2><img src={Envelope} width={'46px'} height={'46px'} /></Grid2>
             <Grid2>Email:</Grid2>
             <Grid2>contact@fitdummy.com</Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
+        <Grid2 size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
           <Grid2 className='contact-cards'>
             <Grid2><img src={MapPin} width={'46px'} height={'46px'} /></Grid2>
             <Grid2>Address:</Grid2>
@@ -55,10 +55,10 @@ function Contact() {
       </Grid2>
 
       <Grid2 container sx={{ px: 4, py: 5 }}>
-        <Grid2 item size={{ xs: 12, md: 6, lg: 6, xl: 6 }}>
+        <Grid2 size={{ xs: 12, md: 6, lg: 6, xl: 6 }}>
           <img src={ContactImage} />
         </Grid2>
-        <Grid2 item size={{ xs: 12, md: 6, lg: 6, xl: 6 }}>
+        <Grid2 size={{ xs: 12, md: 6, lg: 6, xl: 6 }}>
           <Grid2>
             <Grid2></Grid2>
             <Grid2></Grid2>

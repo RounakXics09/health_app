@@ -5,14 +5,14 @@ function Faq() {
   return (
     <Box>
       <Grid2 container columnSpacing={5}>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 5, lg: 5, xl: 5 }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 5, lg: 5, xl: 5 }}>
           <Grid2 className='health-text'> Frequently <span className='health-secondary-text'>Asked</span> Questions</Grid2>
           <Grid2 sx={{ py: 4 }} className='health-description'>Find answers to the most common questions about our platform, features, and services. If you need more help, feel free to reach out to our support team</Grid2>
           <Grid2 sx={{ display: 'flex' }}>
             <Grid2 className="filled-button">Contact us</Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
           <Grid2 sx={{ py: 2 }}>
             <Accordion sx={{ background: '#ffffff', boxShadow: 'none', borderBottom: '1px solid #CECECE', borderRadius: '0px' }}>
               <AccordionSummary

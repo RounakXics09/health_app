@@ -187,7 +187,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   text-align: center;
 }
@@ -196,7 +196,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   text-align: center;
   color: #A1A1AA;
@@ -208,7 +208,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   text-align: center;
   color: #A1A1AA;
@@ -218,7 +218,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   text-align: center;
   color: #A1A1AA;
@@ -232,7 +232,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   text-align: center;
 }
@@ -241,7 +241,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 100%;
+
   letter-spacing: 0%;
 
   span {
@@ -853,7 +853,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 28px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   color: #191919;
 }
@@ -865,6 +865,7 @@
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)) border-box !important;
   padding: 20px;
+  cursor: pointer;
 }
 
 .blog-card:hover {
@@ -875,6 +876,24 @@
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)) border-box !important;
   padding: 20px;
+}
+
+.blog-detail-main-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.blog-detail-main-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  letter-spacing: 0%;
+  color: #6F7684;
 }
 
 .blog-card-heading {
@@ -947,6 +966,7 @@
 .recent-blog-card-inner {
   padding: 5px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .recent-blog-card-inner:hover {
@@ -977,20 +997,31 @@
     padding: 0;
   }
 
-  li::before {
-    content: "✔️ ";
-    color: green;
-  }
+  li {
 
-  .avoid li::before {
-    content: "❌ ";
-    color: red;
-  }
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0%;
+    color: #6F7684;
 
-  .meal-plan li::before {
-    content: "🍽️ ";
-    color: orange;
+    span {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 0%;
+      color: #000000;
+    }
   }
+}
+
+.conclusion-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #6F7684;
 }
 
 .recent-blog-cards-head {
@@ -1060,7 +1091,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
+
     letter-spacing: 0%;
   }
 
@@ -1069,7 +1100,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
+
     letter-spacing: 0%;
   }
 
@@ -1087,7 +1118,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 100%;
+
     letter-spacing: 0%;
     color: #000000;
   }
@@ -1129,7 +1160,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
+
     letter-spacing: 0%;
   }
 
@@ -1151,7 +1182,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 100%;
+
     letter-spacing: 0%;
     color: #000000;
   }
@@ -1163,7 +1194,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 54px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   text-align: center;
   color: #000000;
@@ -1185,7 +1216,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 54px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   color: #000000;
 
@@ -1193,7 +1224,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 54px;
-    line-height: 100%;
+
     letter-spacing: 0%;
     color: #000000;
   }
@@ -1203,7 +1234,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   color: #6F7684;
   padding-top: 20px;
@@ -1231,7 +1262,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   padding-top: 20px;
   text-align: center;
@@ -1332,7 +1363,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 32px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   color: #000;
 }
@@ -1341,7 +1372,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 16px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   color: #000;
   opacity: 50%;
@@ -1367,7 +1398,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 54px;
-  line-height: 100%;
+
   letter-spacing: 0%;
   text-align: center;
   color: #000000;

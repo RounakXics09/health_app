@@ -14,7 +14,7 @@ function Tools() {
         <Grid2 sx={{ py: 4 }} className='health-description text-center width-80'>Explore powerful tools designed to streamline your creative process. From seamless integrations to effortless content management, these features are built to enhance your productivity and creativity</Grid2>
       </Grid2>
       <Grid2 container columnSpacing={4} rowSpacing={4}>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className='tools-card-container' sx={{ height: '417px' }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className='tools-card-container' sx={{ height: '417px' }}>
           <div style={{ height: '317px', display: 'flex', overflow: 'hidden', alignItems: 'flex-start' }}>
             <img src={Tools1} style={{ overflow: 'hidden' }} />
           </div>
@@ -25,7 +25,7 @@ function Tools() {
             </Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className='tools-card-container' sx={{ height: '417px' }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className='tools-card-container' sx={{ height: '417px' }}>
           <div style={{ height: '317px', display: 'flex', overflow: 'hidden', alignItems: 'flex-start' }}>
             <img src={Tools2} style={{ overflow: 'hidden' }} />
           </div>
@@ -37,7 +37,7 @@ function Tools() {
           </Grid2>
         </Grid2>
 
-        <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='tools-card-container' sx={{ height: '387px' }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='tools-card-container' sx={{ height: '387px' }}>
           <div style={{ height: '250px', display: 'flex', overflow: 'hidden', alignItems: 'flex-start' }}>
             <img src={Tools3} style={{ overflow: 'hidden' }} />
           </div>
@@ -48,7 +48,7 @@ function Tools() {
             </Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='tools-card-container' sx={{ height: '387px' }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='tools-card-container' sx={{ height: '387px' }}>
           <div style={{ height: '250px', display: 'flex', overflow: 'hidden', alignItems: 'flex-start' }}>
             <img src={Tools4} style={{ overflow: 'hidden' }} />
           </div>
@@ -59,7 +59,7 @@ function Tools() {
             </Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 item size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='tools-card-container' sx={{ height: '387px' }}>
+        <Grid2 size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className='tools-card-container' sx={{ height: '387px' }}>
           <div style={{ height: '250px', display: 'flex', overflow: 'hidden', alignItems: 'flex-start' }}>
             <img src={Tools5} style={{ overflow: 'hidden' }} />
           </div>
