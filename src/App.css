@@ -1379,6 +1379,37 @@
   padding-top: 30px;
 }
 
+.submit-input {
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.submit-input::placeholder {
+  color: #A1A1AA;
+  font-family: 'Open Sans' sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.submit-button {
+  background: linear-gradient(90deg, #24CC63 0%, #008A47 100%);
+  color: #ffffff;
+  border: 1px solid #24CC63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 130px;
+  margin-left: -10px;
+}
+
 /* news letter end */
 
 .contact-container {
