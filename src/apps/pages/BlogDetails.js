@@ -2,20 +2,22 @@ import { Box, Grid2, Container, Typography, Card, CardContent, List, ListItem, L
 import React from 'react'
 import CalendarIcon from '../assests/CalendarIcon.png'
 import ClockIcon from '../assests/ClockIcon.png'
+import arrowUpRight from '../assests/arrowUpRight.png'
 import BlogDetailImage from '../assests/BlogDetailImage.svg'
+import BlogCards from '../assests/BlogCards.svg'
 import BlogDetailsMainImage from '../assests/BlogDetailsMainImage.svg'
 
 function BlogDetails() {
     return (
         <Box className='blog-details-container' sx={{ px: 5, py: 8 }}>
-            <Grid2 container>
+            <Grid2 container columnSpacing={5}>
                 <Grid2 item size={{ sm: 12, md: 8, lg: 8, xl: 8 }}>
                     <Grid2 className='blog-card-heading'>Blog details</Grid2>
                     <Grid2 sx={{ display: 'flex', py: 2 }}>
                         <Grid2 className='div-center'><img src={CalendarIcon} width={'20px'} height={'20px'} style={{ paddingRight: '8px' }} /> March 10, 2025</Grid2>
                         <Grid2 className='div-center' sx={{ pl: 2 }}><img src={ClockIcon} width={'20px'} height={'20px'} style={{ paddingRight: '8px' }} /> 8:00 AM</Grid2>
                     </Grid2>
-                    <Grid2 className='blog-card-heading'>Keto Diet Meal Plan for Beginnerss</Grid2>
+                    <Grid2 className='blog-card-heading'>Keto Diet Meal Plan for Beginners</Grid2>
                     <Grid2 className='blog-card-chips' sx={{ display: 'flex' }}>
                         <Grid2 className='blog-chips'>
                             LiftingWeights
@@ -24,7 +26,7 @@ function BlogDetails() {
                             Weight Loss
                         </Grid2>
                     </Grid2>
-                    <Grid2 sx={{ py: 4 }}><img src={BlogDetailsMainImage} /></Grid2>
+                    <Grid2 sx={{ py: 4 }}><img src={BlogDetailsMainImage} height={'100%'} width={'100%'} /></Grid2>
                     <Grid2>Starting a keto diet can feel overwhelming, but with the right approach, it becomes an effective and sustainable way to improve health and lose weight. The ketogenic diet focuses on low-carb, high-fat, and moderate protein intake to shift your body into a fat-burning state called ketosis.</Grid2>
                     <Grid2>In this guide, we'll cover the basics of keto, foods to eat and avoid, and provide a simple meal plan to get you started!</Grid2>
 
@@ -72,7 +74,75 @@ function BlogDetails() {
 
                 </Grid2>
                 <Grid2 item size={{ sm: 12, md: 4, lg: 4, xl: 4 }}>
-                    <img src={BlogDetailImage} />
+
+                    <Grid2 sx={{ px: 2 }} className='recent-blog-container'>
+                        <Grid2>Recent Blog</Grid2>
+                        
+                        <Grid2 container className='recent-blog-card'>
+                            <Grid2 className=' div-center d-flex-row recent-blog-card-inner'>
+                                <Grid2 item size={{ xs: 5, sm: 5, md: 5, lg: 5, xl: 5 }} sx={{display:'flex'}}>
+                                    <img src={BlogCards} style={{ maxHeight: '124px', maxWidth: '124px' }} />
+                                </Grid2>
+                                <Grid2 item size={{ xs: 7, sm: 7, md: 7, lg: 7, xl: 7 }}>
+                                    <Grid2 className='date-time-div' sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                                        <Grid2 className='div-center' sx={{ pr: 2 }}><img src={CalendarIcon} width={'20px'} height={'20px'} style={{ paddingRight: '8px' }} /> March 10, 2025</Grid2>
+                                        <Grid2 className='div-center'><img src={ClockIcon} width={'20px'} height={'20px'} style={{ paddingRight: '8px' }} /> 8:00 AM</Grid2>
+                                    </Grid2>
+                                    <Grid2 className='div-center'>
+                                        <Grid2 className='recent-blog-cards-head'>
+                                            Yoga vs. Pilates: Which One is Right for You?
+                                        </Grid2>
+                                        <img src={arrowUpRight} width={'24px'} height={'24px'} style={{ paddingLeft: '8px' }} />
+                                    </Grid2>
+                                    <Grid2 className='recent-blog-cards-desc'>Not sure whether to choose yoga or Pilates? We break down the differences and benefits.</Grid2>
+                                </Grid2>
+                            </Grid2>
+                        </Grid2>
+                        <Grid2 container className='recent-blog-card'>
+                            <Grid2 className=' div-center d-flex-row recent-blog-card-inner'>
+                                <Grid2 item size={{ xs: 5, sm: 5, md: 5, lg: 5, xl: 5 }} sx={{display:'flex'}}>
+                                    <img src={BlogCards} style={{ maxHeight: '124px', maxWidth: '124px' }} />
+                                </Grid2>
+                                <Grid2 item size={{ xs: 7, sm: 7, md: 7, lg: 7, xl: 7 }}>
+                                    <Grid2 className='date-time-div' sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                                        <Grid2 className='div-center' sx={{ pr: 2 }}><img src={CalendarIcon} width={'20px'} height={'20px'} style={{ paddingRight: '8px' }} /> March 10, 2025</Grid2>
+                                        <Grid2 className='div-center'><img src={ClockIcon} width={'20px'} height={'20px'} style={{ paddingRight: '8px' }} /> 8:00 AM</Grid2>
+                                    </Grid2>
+                                    <Grid2 className='div-center'>
+                                        <Grid2 className='recent-blog-cards-head'>
+                                            Yoga vs. Pilates: Which One is Right for You?
+                                        </Grid2>
+                                        <img src={arrowUpRight} width={'24px'} height={'24px'} style={{ paddingLeft: '8px' }} />
+                                    </Grid2>
+                                    <Grid2 className='recent-blog-cards-desc'>Not sure whether to choose yoga or Pilates? We break down the differences and benefits.</Grid2>
+                                </Grid2>
+                            </Grid2>
+                        </Grid2>
+                        <Grid2 container className='recent-blog-card'>
+                            <Grid2 className=' div-center d-flex-row recent-blog-card-inner'>
+                                <Grid2 item size={{ xs: 5, sm: 5, md: 5, lg: 5, xl: 5 }} sx={{display:'flex'}}>
+                                    <img src={BlogCards} style={{ maxHeight: '124px', maxWidth: '124px' }} />
+                                </Grid2>
+                                <Grid2 item size={{ xs: 7, sm: 7, md: 7, lg: 7, xl: 7 }}>
+                                    <Grid2 className='date-time-div' sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                                        <Grid2 className='div-center' sx={{ pr: 2 }}><img src={CalendarIcon} width={'20px'} height={'20px'} style={{ paddingRight: '8px' }} /> March 10, 2025</Grid2>
+                                        <Grid2 className='div-center'><img src={ClockIcon} width={'20px'} height={'20px'} style={{ paddingRight: '8px' }} /> 8:00 AM</Grid2>
+                                    </Grid2>
+                                    <Grid2 className='div-center'>
+                                        <Grid2 className='recent-blog-cards-head'>
+                                            Yoga vs. Pilates: Which One is Right for You?
+                                        </Grid2>
+                                        <img src={arrowUpRight} width={'24px'} height={'24px'} style={{ paddingLeft: '8px' }} />
+                                    </Grid2>
+                                    <Grid2 className='recent-blog-cards-desc'>Not sure whether to choose yoga or Pilates? We break down the differences and benefits.</Grid2>
+                                </Grid2>
+                            </Grid2>
+                        </Grid2>
+
+                    </Grid2>
+                    <Grid2 sx={{ py: 5 }}>
+                        <img src={BlogDetailImage} height={'100%'} width={'100%'} />
+                    </Grid2>
                 </Grid2>
             </Grid2>
         </Box>
