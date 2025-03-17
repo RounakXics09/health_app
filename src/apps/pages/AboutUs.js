@@ -11,7 +11,7 @@ import AboutBot from '../widgets/AboutBot'
 
 function AboutUs() {
   return (
-    <Box>
+    <Box sx={{ width: '100%', pt: '85px' }}>
       <Grid2 sx={{ position: 'relative' }}>
         <Grid2 className='div-center' sx={{ position: 'absolute', width: '100%', height: '100%' }}>
           <Grid2 className='div-center d-flex-col width-100'>

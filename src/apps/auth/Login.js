@@ -1,6 +1,7 @@
 import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, FormLabel, Grid2, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router';
+import TermsFooter from '../components/TermsFooter';
 
 function Login() {
 
@@ -22,9 +23,7 @@ function Login() {
     navigate("/auth/forgotPassword");
   }
 
-  const handleBottomClick = (e) => {
-    navigate(`/${e}`);
-  }
+
 
   return (
     <Box sx={{ height: '100vh', px: { sm: 2, md: 6, lg: 8, xl: 8 }, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
@@ -38,27 +37,27 @@ function Login() {
               Enter your username and password to continue.
             </Grid2>
             <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
-              <FormLabel className='form-label'>Email*</FormLabel>
+              <FormLabel className='form-label'>Email<span>*</span></FormLabel>
               <TextField
                 fullWidth
                 type="email"
                 size='small'
-                margin="normal"
                 variant="outlined"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                sx={{my:1}}
               />
-              <FormLabel className='form-label'>Password*</FormLabel>
+              <FormLabel className='form-label'>Password<span>*</span></FormLabel>
               <TextField
                 fullWidth
                 type="password"
                 size='small'
-                margin="normal"
                 variant="outlined"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                sx={{my:1}}
               />
 
               <Grid2 sx={{ mt: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -101,14 +100,7 @@ function Login() {
           </CardContent>
         </Card>
       </Grid2>
-      <Grid2 className='login-bottom-text' sx={{ pt: { sm: 1, md: 3, lg: 3 }, pb: 1 }}>
-        <span style={{cursor:'pointer'}} onClick={()=>{handleBottomClick('privacy-policy')}}>Privacy Policy</span>
-        |
-        <span style={{cursor:'pointer'}} onClick={()=>{handleBottomClick('terms-service')}}>Terms of Service</span>
-      </Grid2>
-      <Grid2 className='login-bottom-text'>
-        © 2025 fintnessclub. All rights reserved.
-      </Grid2>
+      <TermsFooter />
     </Box>
   )
 }

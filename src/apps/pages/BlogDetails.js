@@ -9,7 +9,7 @@ import BlogDetailsMainImage from '../assests/BlogDetailsMainImage.svg'
 
 function BlogDetails() {
     return (
-        <Box className='blog-details-container' sx={{ px: 5, py: 8 }}>
+        <Box className='blog-details-container' sx={{ px: {xs:2,md:5,lg:5}, pt: '145px' }}>
             <Grid2 container columnSpacing={5}>
                 <Grid2 size={{ sm: 12, md: 8, lg: 8, xl: 8 }}>
                     <Grid2 className='blog-card-heading'>Blog details</Grid2>
@@ -34,7 +34,7 @@ function BlogDetails() {
                         <h1>What is the Keto Diet?</h1>
                         <Grid2 className='conclusion-text'>The ketogenic diet drastically reduces carbohydrate intake and replaces it with fat. This process helps your body use fat as its primary fuel source, leading to weight loss, increased energy levels, and improved mental clarity.</Grid2>
 
-                        <h2>🔹 Macronutrient Breakdown:</h2>
+                        <h2>🔹Macronutrient Breakdown:</h2>
                         <ul>
                             <li>70-75% Fat 🥑🥓</li>
                             <li>20-25% Protein 🍗🍳</li>
@@ -109,7 +109,7 @@ function BlogDetails() {
                 </Grid2>
                 <Grid2 size={{ sm: 12, md: 4, lg: 4, xl: 4 }}>
 
-                    <Grid2 sx={{ px: 2 }} className='recent-blog-container'>
+                    <Grid2 sx={{ px: 2, my: { xs: 2 } }} className='recent-blog-container'>
                         <Grid2>Recent Blog</Grid2>
 
                         <Grid2 container className='recent-blog-card'>

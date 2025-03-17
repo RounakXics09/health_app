@@ -19,6 +19,24 @@
   background: #555;
 }
 
+.form-label {
+  font-family: 'Open Sans' sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  letter-spacing: 0%;
+  color: #000000 !important;
+
+  span {
+    font-family: 'Open Sans' sans-serif !important;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F35047;
+    padding-left: 5px;
+  }
+}
+
 .div-center {
   display: flex;
   align-items: center;
@@ -187,7 +205,6 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
-
   letter-spacing: 0%;
   text-align: center;
 }
@@ -196,11 +213,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
-
   letter-spacing: 0%;
   text-align: center;
   color: #A1A1AA;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 40px;
 }
 
@@ -308,7 +324,7 @@
   font-size: 18px;
   letter-spacing: 0%;
   color: #000000;
-  border-top:1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 /* footer end */
@@ -1056,6 +1072,7 @@
 
 .terms-container {
   position: relative;
+  padding-top: 85px;
 
   .terms-container-inner {
     padding: 40px;
@@ -1125,6 +1142,7 @@
 
 .privacy-container {
   position: relative;
+  padding-top: 85px;
 
   .privacy-container-inner {
     padding: 40px;
@@ -1428,7 +1446,6 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 54px;
-
   letter-spacing: 0%;
   text-align: center;
   color: #000000;
@@ -1579,7 +1596,7 @@
     display: none !important;
   }
 
-  .display-sm-flex{
+  .display-sm-flex {
     display: flex !important;
   }
 
@@ -1711,6 +1728,25 @@
     border-radius: 0px !important;
     border: none !important;
     background: none;
+  }
+
+  .contact-heading {
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .contact-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #6F7684;
+    padding-top: 30px;
+    width: 80%;
   }
 
 }

@@ -19,7 +19,6 @@ const pages = [
 ];
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
 
 function CommonHeader(props) {
 
@@ -37,23 +36,25 @@ function CommonHeader(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Grid2 sx={{py:2}}>
-            <motion.a
-                href='/'
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-                className="flex items-center"
-            >
-                <img src={Logo} alt="Logo" />
-            </motion.a>
+            <Grid2 sx={{ py: 3 }}>
+                <motion.a
+                    href='/'
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="flex items-center"
+                >
+                    <img src={Logo} alt="Logo" />
+                </motion.a>
             </Grid2>
             <Divider />
             <List>
-                {navItems.map((item) => (
+                {pages.map((item, i) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
+                            <Link to={'/' + item.link} style={{ textDecoration: 'none', color: '#1C163C', textAlign: 'center', width: '100%' }}>
+                                {item.name}
+                            </Link>
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -64,8 +65,8 @@ function CommonHeader(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <>
-            <AppBar position="static" className='header'>
+        <Box>
+            <AppBar position="fixed" className='header'>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <div className="flex items-center display-sm-none">
@@ -160,7 +161,7 @@ function CommonHeader(props) {
                     {drawer}
                 </Drawer>
             </nav>
-        </>
+        </Box>
     );
 }
 export default CommonHeader

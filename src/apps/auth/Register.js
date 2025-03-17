@@ -1,6 +1,7 @@
 import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, FormLabel, Grid2, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router'
+import TermsFooter from '../components/TermsFooter';
 
 function Register() {
     const [fullName, setFullName] = useState("");
@@ -30,53 +31,53 @@ function Register() {
               Enter your username and password to continue.
             </Grid2>
             <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
-              <FormLabel className='form-label'>Full Name*</FormLabel>
+              <FormLabel className='form-label'>Full Name<span>*</span></FormLabel>
               <TextField
                 fullWidth
                 label="Full Name"
                 type="text"
                 size='small'
-                margin="normal"
                 variant="outlined"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 required
+                sx={{my:1}}
               />
-              <FormLabel className='form-label'>Email*</FormLabel>
+              <FormLabel className='form-label'>Email<span>*</span></FormLabel>
               <TextField
                 fullWidth
                 label="Email"
                 type="email"
                 size='small'
-                margin="normal"
                 variant="outlined"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                sx={{my:1}}
               />
-              <FormLabel className='form-label'>Mobile Number*</FormLabel>
+              <FormLabel className='form-label'>Mobile Number<span>*</span></FormLabel>
               <TextField
                 fullWidth
                 label="Mobile Number"
                 type="number"
                 size='small'
-                margin="normal"
                 variant="outlined"
                 value={mobileNumber}
                 onChange={(e) => setMobileNumber(e.target.value)}
                 required
+                sx={{my:1}}
               />
-              <FormLabel className='form-label'>Password*</FormLabel>
+              <FormLabel className='form-label'>Password<span>*</span></FormLabel>
               <TextField
                 fullWidth
                 label="Password"
                 type="password"
                 size='small'
-                margin="normal"
                 variant="outlined"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                sx={{my:1}}
               />
 
               <Button
@@ -84,7 +85,7 @@ function Register() {
                 fullWidth
                 variant="contained"
                 className='login-button'
-                sx={{ mt: 3, mb: 4 }}
+                sx={{ mt: 3, mb: 3 }}
               >
                 Sign Up
               </Button>
@@ -98,12 +99,7 @@ function Register() {
           </CardContent>
         </Card>
       </Grid2>
-      <Grid2 className='login-bottom-text' sx={{ pt: { sm: 1, md: 3, lg: 3 }, pb: 1 }}>
-        Privacy Policy   |    Terms of Service
-      </Grid2>
-      <Grid2 className='login-bottom-text'>
-        © 2025 fintnessclub. All rights reserved.
-      </Grid2>
+      <TermsFooter />
     </Box>
   )
 }

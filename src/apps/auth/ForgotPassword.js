@@ -2,6 +2,7 @@ import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, FormLabel, 
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router';
 import SuccessIcon from '../assests/SuccessIcon.svg'
+import TermsFooter from '../components/TermsFooter';
 
 
 function ForgotPassword() {
@@ -38,7 +39,7 @@ function ForgotPassword() {
                   To reset your password. please etner the email address of your fitness club account
                 </Grid2>
                 <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
-                  <FormLabel className='form-label'>Email*</FormLabel>
+                  <FormLabel className='form-label'>Email<span>*</span></FormLabel>
                   <TextField
                     fullWidth
                     type="email"
@@ -62,9 +63,9 @@ function ForgotPassword() {
                   </Button>
                 </Box>
                 <Grid2 className='login-inner-text' sx={{ mt: { sm: 1, md: 2, lg: 2 } }}>
-                  Don't have an account?{" "}
+                  Already have an account?{" "}
                   <span onClick={() => { handleClick('login') }} className='login-links'>
-                    Sign up
+                    Log in
                   </span>
                 </Grid2>
               </CardContent>
@@ -78,7 +79,7 @@ function ForgotPassword() {
                     Send your email account to reset password and make new password
                   </Grid2>
                   <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
-                    <FormLabel className='form-label'>New Password*</FormLabel>
+                    <FormLabel className='form-label'>New Password<span>*</span></FormLabel>
                     <TextField
                       fullWidth
                       type="password"
@@ -89,7 +90,7 @@ function ForgotPassword() {
                       onChange={(e) => setPassword(e.target.value)}
                       required
                     />
-                    <FormLabel className='form-label'>Confirm Password*</FormLabel>
+                    <FormLabel className='form-label'>Confirm Password<span>*</span></FormLabel>
                     <TextField
                       fullWidth
                       type="password"
@@ -112,18 +113,13 @@ function ForgotPassword() {
                       Continue
                     </Button>
                   </Box>
-                  <Grid2 className='login-inner-text' sx={{ mt: { sm: 1, md: 2, lg: 2 } }}>
-                    Don't have an account?{" "}
-                    <span onClick={() => { handleClick('login') }} className='login-links'>
-                      Sign up
-                    </span>
-                  </Grid2>
+                  
                 </CardContent>
               </Card> :
               <Card className='login-card' sx={{ p: { sm: 2, md: 3, lg: 3, xl: 3 } }}>
                 <CardContent>
 
-                  <Grid2 className='div-center' sx={{py:4, px:5}}>
+                  <Grid2 className='div-center' sx={{ py: 4, px: 5 }}>
                     <img src={SuccessIcon} width={'100%'} height={'100%'} />
                   </Grid2>
                   <Grid2 className='login-header' align="center" >
@@ -136,7 +132,7 @@ function ForgotPassword() {
                     type="submit"
                     fullWidth
                     variant="contained"
-                    onClick={() => { handleSubmit() }}
+                    onClick={() => { handleClick('login') }}
                     className='login-button'
                     sx={{ mt: 2, mb: 4 }}
                   >
@@ -146,12 +142,7 @@ function ForgotPassword() {
               </Card>
         }
       </Grid2>
-      <Grid2 className='login-bottom-text' sx={{ pt: { sm: 1, md: 3, lg: 3 }, pb: 1 }}>
-        Privacy Policy   |    Terms of Service
-      </Grid2>
-      <Grid2 className='login-bottom-text'>
-        © 2025 fintnessclub. All rights reserved.
-      </Grid2>
+      <TermsFooter />
     </Box>
   )
 }

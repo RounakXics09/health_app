@@ -18,18 +18,18 @@ import BackBottom from '../assests/BackBottom.png'
 
 function MainPage() {
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%', pt: '80px' }}>
       <Grid2 container rowSpacing={4}>
         {/* <Grid2 size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
           <HeroSection />
         </Grid2> */}
         {/* old hero page */}
-        <Grid2 sx={{ px: { xs: 2, sm: 2, md: 4, lg: 8, xl: 8 },pt:8,position:'relative' }} size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
-        <Grid2 sx={{position:'absolute',top:'0px',left:'0px'}}><img src={BackLeft} /></Grid2>
-        <Grid2 sx={{position:'absolute',right:'0px',top:'120px'}}><img src={BackRight} /></Grid2>
+        <Grid2 sx={{ px: { xs: 2, sm: 2, md: 4, lg: 8, xl: 8 }, pt: 8, position: 'relative' }} size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
+          <Grid2 sx={{ position: 'absolute', top: '0px', left: '0px' }}><img src={BackLeft} /></Grid2>
+          <Grid2 sx={{ position: 'absolute', right: '0px', top: '120px' }}><img src={BackRight} /></Grid2>
           <NewHeroSection />
         </Grid2>
-        <Grid2 sx={{position:'absolute',left:'0px',bottom:'-200px',zIndex:'1'}}><img src={BackBottom} /></Grid2>
+        <Grid2 sx={{ position: 'absolute', left: '0px', bottom: '-200px', zIndex: '1' }}><img src={BackBottom} /></Grid2>
         <Grid2 sx={{ px: { xs: 2, sm: 2, md: 4, lg: 8, xl: 8 }, py: 2 }} size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
           <PhotoSection />
         </Grid2>

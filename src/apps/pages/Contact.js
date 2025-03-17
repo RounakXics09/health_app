@@ -12,40 +12,40 @@ import NewsLetter from '../widgets/NewsLetter'
 
 function Contact() {
   return (
-    <Box className='contact-container'>
+    <Box className='contact-container' sx={{ width: '100%', pt: '85px' }}>
       <Grid2 className='contact-container-inner'>
-        <Grid2 sx={{ position: 'absolute', left: '50px', bottom: '0px' }}>
+        <Grid2 sx={{ position: 'absolute', left: '50px', bottom: '0px' }} className='display-sm-none'>
           <img src={Contact1} width={'100px'} height={'100px'} />
         </Grid2>
-        <Grid2 sx={{ position: 'absolute', top: '-10px', left: '20%', zIndex: -1 }}>
+        <Grid2 sx={{ position: 'absolute', top: '-10px', left: '20%', zIndex: -1 }} className='display-sm-none'>
           <img src={Contact2} width={'83px'} height={'83px'} />
         </Grid2>
-        <Grid2 sx={{ position: 'absolute', bottom: '-10px', right: '18%', zIndex: -1 }}>
+        <Grid2 sx={{ position: 'absolute', bottom: '-10px', right: '18%', zIndex: -1 }} className='display-sm-none'>
           <img src={RunIcon} width={'83px'} height={'83px'} />
         </Grid2>
-        <Grid2 sx={{ position: 'absolute', right: '50px', top: '10px' }}>
+        <Grid2 sx={{ position: 'absolute', right: '50px', top: '10px' }} className='display-sm-none'>
           <img src={Contact3} width={'92px'} height={'92px'} />
         </Grid2>
         <Grid2 className='contact-heading'>Contact Us</Grid2>
         <Grid2 className='contact-description'>Looking for personalized diet plans or have questions about nutrition? We’re here to help! Get in touch with us for expert guidance on your health journey</Grid2>
       </Grid2>
 
-      <Grid2 container sx={{ px: 15, py: 5 }} columnSpacing={5} rowSpacing={4}>
-        <Grid2 size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
+      <Grid2 container sx={{ px: {xs:5,md:15,lg:15}, py: 5 }} columnSpacing={5} rowSpacing={4}>
+        <Grid2 size={{ xs: 12, md: 4, lg: 4, xl: 4 }}>
           <Grid2 className='contact-cards'>
             <Grid2><img src={Phone} width={'46px'} height={'46px'} /></Grid2>
             <Grid2>Phone:</Grid2>
             <Grid2>+1 234 567 8901</Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
+        <Grid2 size={{ xs: 12, md: 4, lg: 4, xl: 4 }}>
           <Grid2 className='contact-cards'>
             <Grid2><img src={Envelope} width={'46px'} height={'46px'} /></Grid2>
             <Grid2>Email:</Grid2>
             <Grid2>contact@fitdummy.com</Grid2>
           </Grid2>
         </Grid2>
-        <Grid2 size={{ xs: 4, md: 4, lg: 4, xl: 4 }}>
+        <Grid2 size={{ xs: 12, md: 4, lg: 4, xl: 4 }}>
           <Grid2 className='contact-cards'>
             <Grid2><img src={MapPin} width={'46px'} height={'46px'} /></Grid2>
             <Grid2>Address:</Grid2>

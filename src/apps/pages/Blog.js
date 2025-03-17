@@ -57,7 +57,7 @@ const Blog_array = [
 
 function Blog() {
     return (
-        <Box sx={{ px: 5, py: 2 }}>
+        <Box sx={{ px: 5, pt:'85px' }}>
             <Grid2 className='blog-heading' sx={{py:5}}>All blog posts</Grid2>
             <Grid2 container columnSpacing={6} rowSpacing={6}>
                 {

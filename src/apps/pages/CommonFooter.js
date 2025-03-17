@@ -7,6 +7,7 @@ import Linkedin from '../assests/linkedin.svg';
 import X from '../assests/x.svg';
 import Facebook from '../assests/facebook.svg';
 import Instagram from '../assests/instagram.svg';
+import { useNavigate } from 'react-router';
 
 const pages = [
   { name: 'youtube', link_url: Youtube },
@@ -17,6 +18,12 @@ const pages = [
 ];
 
 function CommonFooter() {
+
+  const navigate = useNavigate();
+
+  const handleBottomClick = (e) => {
+    navigate(`/${e}`);
+  }
 
   return (
     <Box>
@@ -83,7 +90,11 @@ function CommonFooter() {
           © 2025 fitnessclub . All rights reserved.
         </Grid2>
         <Grid2>
-          Privacy policy    |    Terms of Service    |    Cookies Settings
+          <span style={{ cursor: 'pointer' }} onClick={() => { handleBottomClick('privacy-policy') }}>Privacy policy</span>
+          <span style={{paddingInline:'10px'}}>|</span>
+          <span style={{ cursor: 'pointer' }} onClick={() => { handleBottomClick('terms-service') }}>Terms of Service</span>
+          <span style={{paddingInline:'10px'}}>|</span>
+          <span style={{ cursor: 'pointer' }}>Cookies Settings</span>
         </Grid2>
       </Grid2>
     </Box>
