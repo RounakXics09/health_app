@@ -1579,6 +1579,10 @@
     display: none !important;
   }
 
+  .display-sm-flex{
+    display: flex !important;
+  }
+
   .health-heading-text {
     font-weight: 300;
     font-size: 48px;
