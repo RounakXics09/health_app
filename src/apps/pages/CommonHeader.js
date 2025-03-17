@@ -12,8 +12,9 @@ import { Divider, Drawer, Grid2, IconButton, List, ListItem, ListItemButton, Lis
 
 const pages = [
     { name: 'Home', link: '' },
-    { name: 'Features', link: 'features' },
-    { name: 'Pricing', link: 'pricing' },
+    { name: 'Features', link: '' },
+    { name: 'Pricing', link: '' },
+    { name: 'About', link: 'about' },
     { name: 'Blog', link: 'blog' },
     { name: 'Contact', link: 'contact' }
 ];
@@ -58,8 +59,15 @@ function CommonHeader(props) {
                         </ListItemButton>
                     </ListItem>
                 ))}
-            </List>
-        </Box>
+                <ListItem disablePadding>
+                    <ListItemButton sx={{ textAlign: 'center' }} onClick={() => { handleClick('login') }}>
+                        <Link className="login-button-mobile" style={{ textDecoration: 'none', color: '#1C163C', textAlign: 'center', width: '100%' }}>
+                            Login
+                        </Link>
+                    </ListItemButton>
+                </ListItem>
+            </List >
+        </Box >
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;

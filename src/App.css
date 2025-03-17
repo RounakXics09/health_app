@@ -1211,7 +1211,6 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 54px;
-
   letter-spacing: 0%;
   text-align: center;
   color: #000000;
@@ -1233,7 +1232,6 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 54px;
-
   letter-spacing: 0%;
   color: #000000;
 
@@ -1241,7 +1239,6 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 54px;
-
     letter-spacing: 0%;
     color: #000000;
   }
@@ -1251,7 +1248,6 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-
   letter-spacing: 0%;
   color: #6F7684;
   padding-top: 20px;
@@ -1279,7 +1275,6 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-
   letter-spacing: 0%;
   padding-top: 20px;
   text-align: center;
@@ -1718,6 +1713,19 @@
     padding: 14px 25px;
   }
 
+  .login-button-mobile {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #24CC63;
+    padding: 14px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #24CC63
+  }
+
   .d-flex-col-sm {
     flex-direction: column;
   }
@@ -1737,7 +1745,7 @@
     text-align: center;
     color: #000000;
   }
-  
+
   .contact-description {
     font-weight: 400;
     font-size: 16px;
@@ -1746,6 +1754,72 @@
     text-align: center;
     color: #6F7684;
     padding-top: 30px;
+    width: 80%;
+  }
+
+  .about-heading {
+    font-weight: 700;
+    font-size: 54px;
+  }
+
+  .about-description {
+    font-weight: 400;
+    font-size: 16px;
+    width: 80%;
+    padding-top: 20px;
+  }
+
+  .about-planner-heading {
+    font-weight: 400;
+    font-size: 24px;
+
+    span {
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+
+  .about-planner-description {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .about-bot-heading {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -2%;
+  }
+
+  .our-team-heading {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 58px;
+  
+    span {
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 58px;
+    }
+  }
+
+  .our-team-description {
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
+  .about-heading {
+    font-weight: 700;
+    font-size: 44px;
+    margin-top: 50px;
+  }
+  
+  .about-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6F7684;
     width: 80%;
   }
 

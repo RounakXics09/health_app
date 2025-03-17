@@ -13,20 +13,20 @@ function AboutUs() {
   return (
     <Box sx={{ width: '100%', pt: '85px' }}>
       <Grid2 sx={{ position: 'relative' }}>
-        <Grid2 className='div-center' sx={{ position: 'absolute', width: '100%', height: '100%' }}>
+        <Grid2 className='div-center' sx={{ position: { xs: 'relative', md: 'absolute', lg: 'absolute' }, width: '100%', height: '100%' }}>
           <Grid2 className='div-center d-flex-col width-100'>
             <Grid2 className='about-heading'>About Us</Grid2>
             <Grid2 className='about-description'>Looking for personalized diet plans or have questions about nutrition? We’re here to help! Get in touch with us for expert guidance on your health journey</Grid2>
           </Grid2>
         </Grid2>
-        <Grid2>
+        <Grid2 className='display-sm-none'>
           <img src={AboutBackground} width={'100%'} />
         </Grid2>
       </Grid2>
-      <Grid2 sx={{ py: 8, px: 8 }}>
+      <Grid2 sx={{ py: { xs: 2, md: 8, lg: 8 }, px: { xs: 4, md: 8, lg: 8 } }}>
         <AboutPlanner />
       </Grid2>
-      <Grid2 sx={{ px: 8 }}>
+      <Grid2 sx={{ px: { xs: 2, md: 4, lg: 4 } }}>
         <OurTeam />
       </Grid2>
       <Grid2 sx={{ px: 4, py: 5 }}>
